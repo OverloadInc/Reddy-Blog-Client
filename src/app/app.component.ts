@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,9 @@ import {Observable} from "rxjs";
 })
 export class AppComponent implements OnInit {
   title = 'reddy-blog-client';
+
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
 
@@ -21,6 +25,15 @@ export class AppComponent implements OnInit {
     }).subscribe(value => {
       console.log(value);
     });
+  }
+
+  /**
+   * Navigates to different components by using routers.
+   */
+  submit() {
+    //this.router.navigate(['/posts']);
+    //this.router.navigate(['/post', 1, 'postTitle']);
+    this.router.navigate(['/posts'], {queryParams:{page1: 1, orderBy: 'newest'}});
   }
 
 }
