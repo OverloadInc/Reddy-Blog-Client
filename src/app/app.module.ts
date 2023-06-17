@@ -2,19 +2,29 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { PostListComponent } from './components/post-list/post-list.component';
-import { HomeComponent } from './components/home/home.component';
-import { SinglePostComponent } from './components/single-post/single-post.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FourNotFourComponent } from './components/four-not-four/four-not-four.component';
+import { HeaderComponent } from './components/layouts/header/header.component';
+import { CategoryNavbarComponent } from './components/layouts/category-navbar/category-navbar.component';
+import { FooterComponent } from './components/layouts/footer/footer.component';
+import { SingleCategoryComponent } from './components/pages/single-category/single-category.component';
+import { TermsAndConditionsComponent } from './components/pages/terms-and-conditions/terms-and-conditions.component';
+import { ContactUsComponent } from './components/pages/contact-us/contact-us.component';
+import { SubscriptionFormComponent } from './components/subscription-form/subscription-form.component';
+import {HomeComponent} from "./components/pages/home/home.component";
+import {SinglePostComponent} from "./components/pages/single-post/single-post.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostListComponent,
-    HomeComponent,
     SinglePostComponent,
-    FourNotFourComponent
+    HomeComponent,
+    HeaderComponent,
+    CategoryNavbarComponent,
+    FooterComponent,
+    SingleCategoryComponent,
+    TermsAndConditionsComponent,
+    ContactUsComponent,
+    SubscriptionFormComponent
   ],
   imports: [
     BrowserModule,
