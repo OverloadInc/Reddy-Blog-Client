@@ -1,7 +1,7 @@
 /* Import Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* Define global color styles */
+/* Defines global color styles */
 :root {
   --primary-color: #026467;
   --secondary-color: #E5F5EA;
@@ -9,9 +9,22 @@
   --navbar-footer-color: #F9F9F9;
 }
 
-/* Define the body style */
+/* Defines the body style */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: var(--body-text-color);
+}
+
+/* Defines the site logo style */
+.site-logo {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Defines the nav-link style */
+.nav-link {
+  color: var(--primary-color);
 }
