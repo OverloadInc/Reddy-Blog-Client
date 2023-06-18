@@ -34,3 +34,34 @@ body {
   border: none;
   box-shadow: 0px 0px 33px -10px rgba(71, 114, 254, 0.3);
 }
+
+/* Defines the single post component background */
+.bg-theme {
+  background-color: var(--primary-color);
+}
+
+/* Defines the about us component background */
+.bg-secondary-theme {
+  background-color: var(--secondary-color);
+}
+
+/* Defines the global font primary color */
+.text-theme-primary {
+  color: var(--primary-color);
+}
+
+/* Defines the style for the text and email form elements */
+input[type = text], input[type = email] {
+  height: 60px;
+  padding-left: 20px;
+  font-size: 13px;
+  width: 100%;
+}
+
+/* Defines the submit button style */
+.btn-theme {
+  height: 58px;
+  border: none;
+  font-size: 13px;
+  background-color: var(--primary-color);
+}
