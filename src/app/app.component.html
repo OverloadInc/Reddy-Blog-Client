@@ -5,15 +5,16 @@
 <app-category-navbar></app-category-navbar>
 
 <div class="app-body">
-  <!-- Render the Post Card component -->
-  <app-post-card></app-post-card>
+  <!-- Render the application components -->
+  <router-outlet></router-outlet>
+</div>
 
-  <!-- Render the Subscription Form component -->
-  <app-subscription-form></app-subscription-form>
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <!-- Render the subscription form components -->
+    <app-subscription-form></app-subscription-form>
+  </div>
 </div>
 
 <!-- Render the footer component -->
 <app-footer></app-footer>
-
-<!-- Render the application components -->
-<router-outlet></router-outlet>
