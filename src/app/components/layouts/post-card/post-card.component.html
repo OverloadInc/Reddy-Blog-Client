@@ -1,20 +1,16 @@
-<div class="card shadow-effect">
-  <img src="https://i.pinimg.com/564x/ce/c9/d6/cec9d6dfc5cfa9c3754bf00cf5a14008.jpg"
+<div class="card shadow-effect" *ngIf="postData">
+  <img src="{{postData.data.postImagePath}}"
        alt="post-image" class="card-img-top">
 
   <div class="card-body">
-    <small class="bg-light text-danger text-center"> Books </small>
+    <small class="bg-light text-danger text-center"> {{postData.data.category.category}} </small>
     <small class="bg-light text-success text-center ml-3"> Featured </small>
-    <small class="bg-light text-info text-center ml-3"> Views -100,256 </small>
+    <small class="bg-light text-info text-center ml-3"> {{postData.data.vews}} </small>
 
-    <h5 class="mt-1">Graveyard Shift</h5>
+    <h5 class="mt-1">{{postData.data.title}}</h5>
 
-    <p>When an abandoned textile mill is reopened, several employees meet mysterious deaths.
-      The link between the killings: all occurred between the hours of 11 p.m. and 7 a.m.
-      - the Graveyard Shift. The ic mill foreman (Stephen Macht) has chosen a group to clean up
-      the mill's rat-infested bat. But what the workers find is a subterranean maze of tunnels
-      leading to the cemetery - and an unimaginable horror that comes alive in the dead of the night.</p>
+    <p>{{postData.data.excerpt}}</p>
   </div>
 
-  <small class="bg-light text-info text-center ml-3">Last updated - Jun 17, 2023</small>
+  <small class="bg-light text-info text-center ml-3">Last updated - {{postData.data.createdAt.toMillis() | date}}</small>
 </div>
