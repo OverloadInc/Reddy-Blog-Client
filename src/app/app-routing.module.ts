@@ -10,8 +10,8 @@ import {SingleCategoryComponent} from "./components/pages/single-category/single
 // Build the routes to access the different pages of the website
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'category', component: SingleCategoryComponent},
-  { path: 'post', component: SinglePostComponent},
+  { path: 'category/:category/:id', component: SingleCategoryComponent},
+  { path: 'post/:id', component: SinglePostComponent},
 
   { path: 'about', component: AboutUsComponent},
   { path: 'term-condition', component: TermsAndConditionsComponent},
